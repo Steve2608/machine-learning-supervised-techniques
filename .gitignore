@@ -1,0 +1,11 @@
+# ignore safe-states of notebooks
+*.ipynb_checkpoints*
+
+# ignore converted notebooks
+# *.html
+
+# ignore health dataset
+UE5/2015_health.csv
+
+# MNIST dataset
+UE6/data/
