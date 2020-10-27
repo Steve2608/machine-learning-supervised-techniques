@@ -8,7 +8,7 @@ import subprocess
 from tqdm import tqdm
 
 
-for path in tqdm(sorted(glob.iglob('*/*.ipynb'))[5:], desc='Source files', smoothing=0):
+for path in tqdm(sorted(glob.iglob('*/*.ipynb')), desc='Source files', smoothing=0):
     # execute to temp notebook
     subprocess.run(['jupyter-nbconvert', path, '--execute', '--ExecutePreprocessor.timeout=-1', '--to', 'notebook'])
     # overwrite old notebook
